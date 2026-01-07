@@ -11,12 +11,12 @@
   font-family: "Roboto", sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -58,6 +58,7 @@ nav {
 
 .logo {
   width: 160px;
+  padding: 20px 0 0 0;
 }
 
 ul {
@@ -71,7 +72,7 @@ li {
 .nav__link {
   margin-left: 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
   color: #7342d6;
   font-weight: bold;
   padding: 8px;
@@ -159,22 +160,27 @@ LANDING
 }
 
 header {
-  height: calc(125vh - 80px);
-}
-
-.header__img {
-  transform: translateY(-50px);
+  height: calc(95vh - 80px);
+  display: flex;
+  justify-content: center;
 }
 
 .header__container {
   width: 100%;
   max-width: 720px;
-  margin: 0 auto;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   transform: translateY(-25px);
+}
+
+.header__half {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transform: translateY(-24px)
 }
 
 .header__description {
@@ -185,16 +191,16 @@ header {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 32px;
   color: #7342d6;
   margin-bottom: 24px;
   text-align: center;
-  max-width: 500px;
+  max-width: 400px;
 }
 
 h2 {
-  font-size: 24px;
-  margin-bottom: 32px;
+  font-size: 20px;
+  margin-bottom: 24px;
   text-align: center;
 }
 
@@ -209,7 +215,7 @@ button:active {
 .btn {
   background-color: #7342d6;
   color: white;
-  padding: 12px 24px;
+  padding: 8px 16px;
   font-size: 16px;
   border-radius: 4px;
   border: none;
@@ -218,6 +224,9 @@ button:active {
 
 .header__img--wrapper {
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
