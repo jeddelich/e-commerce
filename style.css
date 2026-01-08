@@ -204,7 +204,7 @@ h2 {
   text-align: center;
 }
 
-button {
+button, .cursor {
   cursor: pointer;
 }
 
@@ -449,7 +449,7 @@ BOOKS PAGE
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 64px;
+  padding: 0 60px;
 }
 
 .books__header--title {
@@ -470,12 +470,20 @@ select {
 }
 
 .books__loading {
+  font-size: 60px;
+  color: #7342d6;
+  padding-top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 60px;
-  font-size: 60px;
-  color: #7342d6;
+}
+
+.books__loading--spinner {
+  display: none !important;
+}
+
+.books__loading .books__loading--spinner {
+  display: block !important;
 }
 
 .book__title,
